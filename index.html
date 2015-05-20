@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Mi aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/lindo.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+        
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+ </head>
+
+  
+    <body>
+    
+   <div data-role="page" id="page">
+	<div data-role="header">
+        <h1 align="center">Cuantos dias faltan para tu cumpleaños???</h1>
+	</div>
+	<div data-role="content">	
+    
+    <h3 align="center">BIENVENIDO</h3>
+    
+		<p align="center" style="color:#60F">La siguiente aplicacion sirve para calcular el numero de dias que faltan para tu cumpleaños!!!</p>
+        
+        <div align="center"><img src="images/globos_7312.jpg" style="width:670px; height:600px;"></div>
+        
+        <div align="right">
+        <a href="#datos" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-btn-inline">Continuar</a>
+        </div>
+ </div>
+	<div data-role="footer">
+		<h2>@Eduardo Torres </h2>
+        <h2>@Arturo Izucar </h2>
+	</div>
+
+</div>
+
+
+
+
+<div data-role="page" id="datos">
+	<div data-role="header">
+        <h1>Introduce tu nombre! por favor!!!</h1>
+	</div>
+	<div data-role="content" >
+    <div>	
+ <input type="text" name="nombre" placeholder="" style="we:100" id="txtnombre" >
+     </div>
+     <div align="center">
+     <img src="images/Birthday-candles.jpg" style="width:690px; height:500px;">
+     </div>
+       <div data-role="controlgroup" data-type="horizontal" align="center">
+        <a  href="#page" data-role="button" data-inline="true" data-icon="arrow-l" data-iconpos="left">   
+        Atras
+        </a>	
+        <a  href="#fechas" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" id="siguiente_nombre">        
+       Siguiente
+        </a>	
+        </div>		
+	 </div>
+	<div data-role="footer" data-position="fixed">
+		<h2>@Eduardo Torres</h2>
+        <h2>@Arturo Izucar</h2>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="fechas">
+	<div data-role="header">
+        <h1>Ingresa tu fecha de nacimiento!!!</h1>
+	</div>
+	<div align="center" data-role="controlgroup" data-type="horizontal">	
+    
+    <div align="center" style="width:100px; float:left; padding:15px">
+    DD
+    <input type="number" name="numero" placeholder="" id="dia">
+    
+    </div>
+     <div align="center" style="width:100px; float:left; padding:15px">
+     MM
+    <input type="number" name="numero" placeholder="" id="mes">
+    
+    </div>
+     <div align="center" style="width:80px; float:left; padding:15px">
+     AAAA
+    <input type="number" name="numero" placeholder="" id="anio">
+    
+    </div>
+    <img src="images/party-152010_640.png" height="278" style="width:250px; height:300px;">
+		 <div data-role="controlgroup" data-type="horizontal" align="center" style="clear:both">
+        <a  href="#datos" data-role="button" data-inline="true" data-icon="arrow-l" data-iconpos="left">   
+        Atras
+        </a>	
+        <a href="#result" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" id="resultado">
+        Siguiente
+        </a>	
+        </div>			
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h2>@Eduardo Torres</h2>
+        <h2>@Arturo Izucar</h2>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="result" >
+	<div data-role="header">
+		<h1>en hora buena!!!</h1>
+	</div>
+    <div data-role="content">
+      
+      
+      <div id="divdias" align="center" class="final">
+      </div>
+ 
+      <div id="divcumple" align="center" class="final"> 
+      </div>
+      
+      
+      <div id="divedad" align="center" class="final">
+      </div>
+      
+      <div id="divfelicidades" align="center" hidden="true" class="final">
+        <p>felicidades ahora eres un poco mas viejo!!!<br>
+        <br>
+        </p>
+      </div>
+      <div align="center">
+      <img src="images/Imágenes-de-Cumpleaños-con-un-Pastel-3.jpg" style="width:300px; height:300px;">
+      </div>
+    </div>
+ 
+
+             <div align="center">
+        <a href="#page" data-transition="pop" id="btnhome" class="ui-btn  ui-icon-home ui-btn-icon-right ui-btn-inline">Inicio</a>
+        </div>
+
+	<div data-role="footer" data-position="fixed">
+		<h2>@Eduardo Torres</h2>
+        <h2>@Arturo Izucar</h2>
+	</div>
+</div>
+
+    </body>
+
+</html>
